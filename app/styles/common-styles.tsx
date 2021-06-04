@@ -2,6 +2,7 @@ export const colors = {
   splashGradientColor: ['rgb(62, 65, 247)', 'rgb(155, 114, 252)'],
   profileGradientColor: ['rgb(26, 27, 87)', 'rgb(96, 62, 176)'],
   white: '#fff',
+  main: '#87b726',
   gray: 'rgb(216,216,216)',
   gray1: 'rgb(243,243,243)',
   gray2: 'rgb(214,214,214)',
