@@ -1,0 +1,245 @@
+{
+    "code": 200,
+    "status": "OK",
+    "message": null,
+    "trackId": "b9a20a0e",
+    "hasError": false,
+    "errors": null,
+    "auth": null,
+    "courseDetail": {
+        "courseId": 337,
+        "courseTitle": "From Foal to Grand Prix-Horse Part 1: From the Foal to the Novice Horse",
+        "courseSlug": "novice-horse-training",
+        "courseDescription": "<p>The age-appropriate basic training of a young horse is the basis for developing a reliable, confident riding horse. It is important to encourage young horses without overtaxing them. In this course, riding master Klaus Balkenhol, gives you a unique insight into his method of age-appropriate horse training according to the dressage training scale.</p>\r\n<p>It takes about 2 years to establish the foundation training of a young horse &ndash; even for extremely talented horses, like the 3-year-old stallion in the third part of the course. The riding master explains what you should pay attention to with such exceptional horses in order to prepare them for a long and successful career.</p>\r\n<p>Classical horse training is all about consolidating trust in the rider and building up the muscles that are important for riding. Klaus Balkenhol shows the muscle development he looks for and helps you recognize whether the hindquarters are active.</p>\r\n<p>Young horses can quickly become worried in unfamiliar situations. Like the 5-year-old, His Highness, who in the sixth part of the course is frightened by loud music in the warm-up arena. Klaus Balkenhol comments on this scenario and explains how you can solve such moments in a horse-friendly way.&nbsp;</p>",
+        "courseTrailerSrc": "https://stream.wehorse.com/video/course/0/0/0/0/0/3/3/7/en/trailer/337_en_from-foal-to-grand-prix-horse-1-from-the-foal-to-the-novice-horse-klaus-balkenhol_trailer.m3u8",
+        "courseImage": "https://cdn.wehorse.com/video/course/0/0/0/0/0/3/3/7/en/images/cover.jpg",
+        "courseImageAlt": "Klaus Balkenhol and foal",
+        "courseRidingDifficulty": [
+            "intermediate",
+            "advanced"
+        ],
+        "courseBenefitsList": [
+            "Klaus Balkenhol's philosophy for training horses in an age-appropriate manner",
+            "How to train your horse correctly in the first years under the rider",
+            "Solving typical problems in unfamiliar surroundings in a horse-friendly way",
+            "How to prepare your young horse for competition"
+        ],
+        "courseMainCategory": {
+            "categoryId": 277,
+            "categoryName": "Young Horses",
+            "categorySlug": "young-horses",
+            "categoryIcon": "https://cdn.wehorse.com/category/image/icon/en/Young-Horses.svg",
+            "categoryIconAlt": "Young Horses",
+            "categoryColor": "#C4E1DD"
+        },
+        "courseTrainerList": [
+            {
+                "trainerId": 86,
+                "trainerFirstName": "Klaus",
+                "trainerLastName": "Balkenhol",
+                "trainerAvatar": "https://cdn.wehorse.com/trainer/image/avatar/en/klaus-balkenhol.jpg",
+                "trainerAvatarAlt": "Klaus Balkenhol",
+                "trainerSlug": "klaus-balkenhol"
+            }
+        ],
+        "courseVideoList": [
+            {
+                "videoId": 1450,
+                "videoTitle": "Basics and Goals for Fair and Correct Horse Training",
+                "videoSrc": null,
+                "videoReleaseDate": "2021-05-21T00:00:00+02:00",
+                "videoDescription": "<p>edit me</p>",
+                "videoDuration": 752,
+                "videoBenefits": [
+                    "Raising young horses and building up trust",
+                    "How to recognise a future Grand Prix horse",
+                    "Starting a young horse under saddle",
+                    "Klaus Balkenhol’s philosophy for training a potential Grand Prix horse"
+                ],
+                "videoSlug": null,
+                "videoTrainers": [
+                    {
+                        "id": 86,
+                        "slug": "klaus-balkenhol",
+                        "name": "Klaus Balkenhol"
+                    }
+                ],
+                "endCard": null,
+                "videoLog": {
+                    "videoId": 1450,
+                    "videoType": "trailer",
+                    "videoTitle": "Basics and Goals for Fair and Correct Horse Training",
+                    "trainerId": 86,
+                    "trainerName": "Klaus Balkenhol"
+                },
+                "videoDetailPageHidden": true,
+                "watchTimeInSec": 0
+            },
+            {
+                "videoId": 1451,
+                "videoTitle": "Basic Exercises for all 3-year-old Riding Horses",
+                "videoSrc": null,
+                "videoReleaseDate": "2021-05-21T00:00:00+02:00",
+                "videoDescription": "<p>edit me</p>",
+                "videoDuration": 683,
+                "videoBenefits": [
+                    "Training steps for a green 3-year-old mare",
+                    "Age-appropriate training goals for 3-year-olds",
+                    "Adding variety to your young horse’s training with these exercises",
+                    "The skills a good rider needs for training young horses"
+                ],
+                "videoSlug": null,
+                "videoTrainers": [
+                    {
+                        "id": 86,
+                        "slug": "klaus-balkenhol",
+                        "name": "Klaus Balkenhol"
+                    }
+                ],
+                "endCard": null,
+                "videoLog": {
+                    "videoId": 1451,
+                    "videoType": "trailer",
+                    "videoTitle": "Basic Exercises for all 3-year-old Riding Horses",
+                    "trainerId": 86,
+                    "trainerName": "Klaus Balkenhol"
+                },
+                "videoDetailPageHidden": true,
+                "watchTimeInSec": 0
+            },
+            {
+                "videoId": 1452,
+                "videoTitle": "Building Trust and Solving Problems with Sensitive 4-year-old",
+                "videoSrc": null,
+                "videoReleaseDate": "2021-05-21T00:00:00+02:00",
+                "videoDescription": "<p>edit me</p>",
+                "videoDuration": 610,
+                "videoBenefits": [
+                    "Klaus Balkenhol coaches Stefan Wolf on a sensitive 4-year-old",
+                    "How your horse learns to trust you in the saddle",
+                    "Training sessions for skittish or sensitive horses",
+                    "How typical problems emerge with talented youngsters"
+                ],
+                "videoSlug": null,
+                "videoTrainers": [
+                    {
+                        "id": 86,
+                        "slug": "klaus-balkenhol",
+                        "name": "Klaus Balkenhol"
+                    }
+                ],
+                "endCard": null,
+                "videoLog": {
+                    "videoId": 1452,
+                    "videoType": "trailer",
+                    "videoTitle": "Building Trust and Solving Problems with Sensitive 4-year-old",
+                    "trainerId": 86,
+                    "trainerName": "Klaus Balkenhol"
+                },
+                "videoDetailPageHidden": true,
+                "watchTimeInSec": 0
+            },
+            {
+                "videoId": 1453,
+                "videoTitle": "Preparing Talented Young Horses for Competitions",
+                "videoSrc": null,
+                "videoReleaseDate": "2021-05-21T00:00:00+02:00",
+                "videoDescription": "<p>edit me</p>",
+                "videoDuration": 723,
+                "videoBenefits": [
+                    "Training the winning stallion of the 3-year-old licensing",
+                    "Intelligent management of young top horses",
+                    "How to present a 3-year-old at a show in an age-appropriate way",
+                    "Preparing a 3-year-old stallion for the 70-day stud test"
+                ],
+                "videoSlug": null,
+                "videoTrainers": [
+                    {
+                        "id": 86,
+                        "slug": "klaus-balkenhol",
+                        "name": "Klaus Balkenhol"
+                    }
+                ],
+                "endCard": null,
+                "videoLog": {
+                    "videoId": 1453,
+                    "videoType": "trailer",
+                    "videoTitle": "Preparing Talented Young Horses for Competitions",
+                    "trainerId": 86,
+                    "trainerName": "Klaus Balkenhol"
+                },
+                "videoDetailPageHidden": true,
+                "watchTimeInSec": 0
+            },
+            {
+                "videoId": 1454,
+                "videoTitle": "Training and Muscle Building for 5-year-old Horses",
+                "videoSrc": null,
+                "videoReleaseDate": "2021-05-21T00:00:00+02:00",
+                "videoDescription": "<p>edit me</p>",
+                "videoDuration": 1381,
+                "videoBenefits": [
+                    "The structure and goals of dressage work for 5-year-olds",
+                    "Building and developing the muscles of young horses correctly",
+                    "The importance of introducing new riders during training",
+                    "Understand why young horses come above the bit or go behind the vertical"
+                ],
+                "videoSlug": null,
+                "videoTrainers": [
+                    {
+                        "id": 86,
+                        "slug": "klaus-balkenhol",
+                        "name": "Klaus Balkenhol"
+                    }
+                ],
+                "endCard": null,
+                "videoLog": {
+                    "videoId": 1454,
+                    "videoType": "trailer",
+                    "videoTitle": "Training and Muscle Building for 5-year-old Horses",
+                    "trainerId": 86,
+                    "trainerName": "Klaus Balkenhol"
+                },
+                "videoDetailPageHidden": true,
+                "watchTimeInSec": 0
+            },
+            {
+                "videoId": 1455,
+                "videoTitle": "Training 5-year-olds in a Strange Environment and Riding a Test",
+                "videoSrc": null,
+                "videoReleaseDate": "2021-05-21T00:00:00+02:00",
+                "videoDescription": "<p>edit me</p>",
+                "videoDuration": 1144,
+                "videoBenefits": [
+                    "Training session with a 5-year-old in the warm-up arena",
+                    "After 2 years of classical training your horse will be able to do this",
+                    "How to confidently solve frightening moments in a strange atmosphere",
+                    "Age-appropriate performance of a 5-year-old stallion in a dressage test"
+                ],
+                "videoSlug": null,
+                "videoTrainers": [
+                    {
+                        "id": 86,
+                        "slug": "klaus-balkenhol",
+                        "name": "Klaus Balkenhol"
+                    }
+                ],
+                "endCard": null,
+                "videoLog": {
+                    "videoId": 1455,
+                    "videoType": "trailer",
+                    "videoTitle": "Training 5-year-olds in a Strange Environment and Riding a Test",
+                    "trainerId": 86,
+                    "trainerName": "Klaus Balkenhol"
+                },
+                "videoDetailPageHidden": true,
+                "watchTimeInSec": 0
+            }
+        ],
+        "courseVideoCount": 6,
+        "courseNew": true,
+        "courseAdditionalMaterialList": []
+    },
+    "scriptTimeSec": null,
+    "flashMessages": []
+}

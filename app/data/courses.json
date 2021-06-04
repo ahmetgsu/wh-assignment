@@ -1,0 +1,218 @@
+{
+    "code": 200,
+    "status": "OK",
+    "message": null,
+    "trackId": "b2370953",
+    "hasError": false,
+    "errors": null,
+    "auth": {
+        "userId": 1001564,
+        "runningSubscription": false,
+        "fullAccess": true,
+        "isFullyAuthenticated": true,
+        "isChargebee": true
+    },
+    "courseCards": [
+        {
+            "source": null,
+            "courseId": 283,
+            "courseTitle": "Cypress Test Course",
+            "courseSlug": "cypress-test-course",
+            "courseImage": "https://cdn.stage-welearn-wehorse.com/video/course/0/0/0/0/0/0/0/1/de/images/cover.jpg",
+            "courseImageAlt": "cypress test course",
+            "courseDescription": "<p>Hey, I'm the cypress test course</p>",
+            "courseItems": 4,
+            "courseNew": true,
+            "courseDuration": 4352,
+            "courseTrainerList": [
+                {
+                    "trainerId": 1,
+                    "trainerSlug": "ingrid-klimke",
+                    "trainerFirstName": "Ingrid",
+                    "trainerLastName": "Klimke",
+                    "trainerAvatar": "https://cdn.stage-welearn-wehorse.com/trainer/image/avatar/en/ingrid-klimke.jpg",
+                    "trainerAvatarAlt": "Ingrid Klimke"
+                }
+            ],
+            "courseMainCategory": {
+                "categoryId": 1,
+                "categorySlug": "dressage",
+                "categoryName": "Dressage",
+                "categoryIcon": "https://cdn.stage-welearn-wehorse.com/category/image/icon/en/Dressage.svg",
+                "categoryIconAlt": "Dressage",
+                "categoryColor": "#ABCAD0"
+            },
+            "progress": null
+        },
+        {
+            "source": null,
+            "courseId": 291,
+            "courseTitle": "test",
+            "courseSlug": "test-test-test",
+            "courseImage": "https://cdn.stage-welearn-wehorse.com/video/course/0/0/0/0/0/0/0/1/en/images/cover.jpg",
+            "courseImageAlt": "test",
+            "courseDescription": "<p>test</p>",
+            "courseItems": 2,
+            "courseNew": true,
+            "courseDuration": 4326,
+            "courseMainCategory": {
+                "categoryId": 1,
+                "categorySlug": "dressage",
+                "categoryName": "Dressage",
+                "categoryIcon": "https://cdn.stage-welearn-wehorse.com/category/image/icon/en/Dressage.svg",
+                "categoryIconAlt": "Dressage",
+                "categoryColor": "#ABCAD0"
+            },
+            "progress": null
+        },
+        {
+            "source": null,
+            "courseId": 1,
+            "courseTitle": "Just Paul - First Years of Training for the Young Horse",
+            "courseSlug": "just-paul-training-young-horse-2",
+            "courseImage": "https://cdn.stage-welearn-wehorse.com/video/course/0/0/0/0/0/0/0/1/en/images/cover.jpg",
+            "courseImageAlt": null,
+            "courseDescription": "<p>This course gives you the opportunity to accompany Olympic champion Ingrid Klimke throughout the first year of training with Just Paul, a talented 3-year-old gelding. She thoroughly explains her systematic approach for mastering everything from the first strides under saddle to the first trail rides, small jumps and the first show. She is coached by her mentor Major Paul Stecken. His wealth of knowledge and valuable tips are sure to also help you when working with your horse at home.<br /><br />The young horse should be introduced very gently to his new job as a riding horse. Ingrid Klimke prefers to only ride a 3-year-old three to four days per week. While her initial focus is on a solid dressage foundation, she uses trail rides and the galloping track to add variety. This keeps Just Paul motivated and develops his balance, confidence, and surefootedness. In the dressage arena, the training scale is on Ingrid Klimke&rsquo;s mind as she works on rhythm, relaxation and establishing a correct contact. Watch how she uses half halts to teach the young horse to reach for the bit rather than creating the contact with the hand. This is especially important with a horse like Just Paul who has the tendency to curl and come behind the vertical. Once the young horse understands the basic aids, he gets to clear the first small jumps in the arena and on the cross country course.<br /><br />After seven months of training, Just Paul is ready for his first dressage show. Watch how Ingrid Klimke diligently prepares her young charge for this task and shares her immense wisdom about practicing the test at home and handling the excitement of the competition day. Have your note pad handy for world class tips on managing your horse in the warm-up arena and riding a precise, well executed test.</p>",
+            "courseItems": 7,
+            "courseNew": false,
+            "courseDuration": 9541,
+            "courseMainCategory": {
+                "categoryId": 277,
+                "categorySlug": "young-horses",
+                "categoryName": "Young Horses",
+                "categoryIcon": "https://cdn.stage-welearn-wehorse.com/category/image/icon/en/Young-Horses.svg",
+                "categoryIconAlt": "Young Horses",
+                "categoryColor": "#C4E1DD"
+            },
+            "progress": null
+        },
+        {
+            "source": null,
+            "courseId": 159,
+            "courseTitle": "Horse Care 101: Grooming and Tacking up",
+            "courseSlug": "grooming-horse",
+            "courseImage": "https://cdn.stage-welearn-wehorse.com/video/course/0/0/0/0/0/1/5/9/en/images/cover.jpg",
+            "courseImageAlt": null,
+            "courseDescription": "<p>Even before getting on your horse, it is important to be familiar with basic horse care. This allows you to stay safe, check your horse for injuries or problems, and prepare properly for your ride. You will need to learn how to groom and tack up your horse, and to read your horse's body language correctly. This course by the German riding instructor Sybille Wiemer is a great introduction to everything a new horse person needs to know!<br /><br />There are different grooming tools for the different body parts of your horse. Learn what items you will need to have in your grooming box and how to use everything properly. For example, you don't want to use a hard brush on your horse's sensitive areas. Grooming should not only fulfill the function of cleaning, it should also feel good to the horse. This way you can start building a trusting relationship with him. In addition, you will find out how to tie your horse with a quick release knot that can be easily undone in an emergency. Also, never tie a horse to movable objects such as gates as he could get injured should he spook.<br /><br />Once your horse is clean, you will learn how to properly tack up. This includes saddling and bridling. Sybille will show you the different types of bits and bridles and how they should be adjusted to fit. She will walk you through the process of safely bridling your horse step by step. The saddle is the other important piece of equipment. It has to fit both horse and rider well in order not to cause injury or keep the rider from sitting correctly. Learn what to look out for when buying a saddle and how to check if it sits properly on your horse. With Sybille's easy to remember tips, you can confidently continue practicing everything at home!</p>",
+            "courseItems": 3,
+            "courseNew": false,
+            "courseDuration": 8534,
+            "courseTrainerList": [
+                {
+                    "trainerId": 46,
+                    "trainerSlug": "sibylle-wiemer",
+                    "trainerFirstName": "Sibylle",
+                    "trainerLastName": "Wiemer",
+                    "trainerAvatar": "https://cdn.stage-welearn-wehorse.com/trainer/image/avatar/en/sibylle-wiemer.jpg",
+                    "trainerAvatarAlt": "Sibylle Wiemer"
+                }
+            ],
+            "courseMainCategory": {
+                "categoryId": 127,
+                "categorySlug": "health-care",
+                "categoryName": "Care & Health",
+                "categoryIcon": "https://cdn.stage-welearn-wehorse.com/category/image/icon/en/Horse-care-health.svg",
+                "categoryIconAlt": "Horse care and health",
+                "categoryColor": "#D4E5B5"
+            },
+            "progress": null
+        },
+        {
+            "source": null,
+            "courseId": 20,
+            "courseTitle": "Seminar: Classical Training for Young Horses",
+            "courseSlug": "classical-training-young-horses",
+            "courseImage": "https://cdn.stage-welearn-wehorse.com/video/course/0/0/0/0/0/0/2/0/en/images/cover.jpg",
+            "courseImageAlt": null,
+            "courseDescription": "<p>&ldquo;<em>Every mistake I can avoid now is one I won&rsquo;t have to correct later</em>,&rdquo; says Anja Beran, a prolific German classical dressage trainer and author. This course covers the specific considerations and priorities when training young horses and the reasons why they are so important. These insights translate to concrete dos and don&rsquo;ts that will help you to keep your horse sound and healthy for years to come.<br /><br />Anja Beran and veterinarian Elisabeth Albescu outline the physical and psychological development of young horses up to their seventh year and its implications for training intensity and strategy. Anja Beran shares her horse-friendly training principles designed for long-term health and soundness. She shows you exactly what it means to set your horse up for success when leading, lunging, and starting your horse under saddle. You will learn what type of tack and equipment to use, for example why to use a lunging cavesson, why not to use draw reins, and how to move forward with the training. At this stage, even small mistakes such as banging your horse&rsquo;s teeth when bridling, or the stress that arises from changing trainers frequently, can be damaging to your horse&rsquo;s development.<br /><br />You will then see the practical application of Anja Beran&rsquo;s training principles with four very different young horses. The 6-year-old Bailando, for example, is a licensed stallion who needs to learn to relax in front of an audience. The 4-year-old mare Sans Souci is very large, and the rider still works on general balance and not restricting her huge canter stride. You will learn how to avoid mistakes from day one and get tips on giving your horse the best chance of achieving his full potential within his natural limits. It is absolutely essential to Anja Beran&rsquo;s philosophy that each horse is treated as an individual and learns to trust his rider. Otherwise, sustainable and respectful training that keeps the horse healthy is impossible.<br /><br /></p>",
+            "courseItems": 2,
+            "courseNew": false,
+            "courseDuration": 12466,
+            "courseTrainerList": [
+                {
+                    "trainerId": 4,
+                    "trainerSlug": "anja-beran",
+                    "trainerFirstName": "Anja",
+                    "trainerLastName": "Beran",
+                    "trainerAvatar": "https://cdn.stage-welearn-wehorse.com/trainer/image/avatar/en/anja-beran.jpg",
+                    "trainerAvatarAlt": "Anja Beran"
+                }
+            ],
+            "courseMainCategory": {
+                "categoryId": 277,
+                "categorySlug": "young-horses",
+                "categoryName": "Young Horses",
+                "categoryIcon": "https://cdn.stage-welearn-wehorse.com/category/image/icon/en/Young-Horses.svg",
+                "categoryIconAlt": "Young Horses",
+                "categoryColor": "#C4E1DD"
+            },
+            "progress": null
+        },
+        {
+            "source": null,
+            "courseId": 111,
+            "courseTitle": "Equestrian Workouts for Success in the Saddle",
+            "courseSlug": "equestrian-workout",
+            "courseImage": "https://cdn.stage-welearn-wehorse.com/video/course/0/0/0/0/0/1/1/1/en/images/cover.jpg",
+            "courseImageAlt": null,
+            "courseDescription": "<p>You pay close attention to your horse's fitness level, but what about your own? It's very important that the rider can activate and deactivate specific muscle groups in order to give precise aids. That's a prerequisite for harmonious riding. Although many equestrians know this, very few take the implications seriously. But even a 20 to 30 minutes workout twice a week can make a significant difference in your riding! You don't even need to go to a gym. If you have a broom and a water bucket at the barn, you are all set! In this course, fitness enthusiast and eventing champion Bettina Hoy will get you motivated!<br /><br />The exercise recommendations in this course are based on the CrossFit training philosophy, which increases fitness and wellbeing through a wide variety of high-intensity functional movements. Bettina will show you what exercises have the biggest impact for certain training goals. And importantly, you'll learn to do them correctly to avoid injury. For one, don't skip the warm-up with jumping jacks, shoulder dislocates, and good mornings. In videos 2 and 4, you'll get exercises specifically to improve your basic dressage seat and your light seat respectively. Watch how Bettina increases her body tension in the scaled pull-ups to emulate what she needs to do in the saddle.<br /><br />Video 3 is dedicated to your half-halt-muscles: your abdominals, lower back, and gluteus will get a good workout! Find out which exercises beyond the plank help you to give precise weight aids. For sustained training success, find a fitness buddy! It's more fun and you are more likely to stick with it if you're not doing it alone. In the last video of the course, Bettina will give you a complete workout program that you can easily follow at home.</p>",
+            "courseItems": 3,
+            "courseNew": false,
+            "courseDuration": 9846,
+            "courseTrainerList": [
+                {
+                    "trainerId": 67,
+                    "trainerSlug": "bettina-hoy",
+                    "trainerFirstName": "Bettina",
+                    "trainerLastName": "Hoy",
+                    "trainerAvatar": "https://cdn.stage-welearn-wehorse.com/trainer/image/avatar/en/bettina-hoy.jpg",
+                    "trainerAvatarAlt": "Bettina Hoy"
+                }
+            ],
+            "courseMainCategory": {
+                "categoryId": 11,
+                "categorySlug": "the-rider-aids",
+                "categoryName": "Rider's Seat & Aids",
+                "categoryIcon": "https://cdn.stage-welearn-wehorse.com/category/image/icon/en/Riders-Seat-Aids.svg",
+                "categoryIconAlt": "Riders Seat and Aids",
+                "categoryColor": "#D0C184"
+            },
+            "progress": null
+        },
+        {
+            "source": null,
+            "courseId": 284,
+            "courseTitle": "Test hidden Videodetailpages",
+            "courseSlug": "test-videodetailpages",
+            "courseImage": "https://cdn.stage-welearn-wehorse.com/video/course/0/0/0/0/0/0/0/1/en/images/cover.jpg",
+            "courseImageAlt": null,
+            "courseDescription": "<p>This is a test for the hidden videodetailpages</p>",
+            "courseItems": 3,
+            "courseNew": false,
+            "courseDuration": 4566,
+            "courseTrainerList": [
+                {
+                    "trainerId": 48,
+                    "trainerSlug": "alizee-froment",
+                    "trainerFirstName": "Alizée",
+                    "trainerLastName": "Froment",
+                    "trainerAvatar": "https://cdn.stage-welearn-wehorse.com/trainer/image/avatar/en/alizée-froment.jpg",
+                    "trainerAvatarAlt": "Alizée Froment"
+                }
+            ],
+            "courseMainCategory": {
+                "categoryId": 1,
+                "categorySlug": "dressage",
+                "categoryName": "Dressage",
+                "categoryIcon": "https://cdn.stage-welearn-wehorse.com/category/image/icon/en/Dressage.svg",
+                "categoryIconAlt": "Dressage",
+                "categoryColor": "#ABCAD0"
+            },
+            "progress": null
+        }
+    ],
+    "orderData": {
+        "orderOne": "isNew:desc",
+        "orderTwo": "updatedAt:desc"
+    }
+}
