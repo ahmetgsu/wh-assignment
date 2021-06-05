@@ -28,10 +28,27 @@ $ npx pod-install ios
 
 ### ScreenShots
 
-![SS1](./app/assets/images/01.png =195x422)
 <img align="left" alt="splash-screen" width="195px" height="422px" src="https://github.com/ahmetgsu/wehorse-assignment/blob/main/app/assets/images/01.png" />
 
-![SS2](./app/assets/images/02.png)
+<img align="left" alt="ghost-loader" width="195px" height="422px" src="https://github.com/ahmetgsu/wehorse-assignment/blob/main/app/assets/images/02.png" />
+
+<img align="left" alt="home-screen" width="195px" height="422px" src="https://github.com/ahmetgsu/wehorse-assignment/blob/main/app/assets/images/03.png" />
+
+<img align="left" alt="filter-screen" width="195px" height="422px" src="https://github.com/ahmetgsu/wehorse-assignment/blob/main/app/assets/images/04.png" />
+
+<img align="left" alt="filter-selected" width="195px" height="422px" src="https://github.com/ahmetgsu/wehorse-assignment/blob/main/app/assets/images/05.png" />
+
+<img align="left" alt="filter-result" width="195px" height="422px" src="https://github.com/ahmetgsu/wehorse-assignment/blob/main/app/assets/images/06.png" />
+
+<img align="left" alt="course-detail-loading" width="195px" height="422px" src="https://github.com/ahmetgsu/wehorse-assignment/blob/main/app/assets/images/07.png" />
+
+<img align="left" alt="desc-expanded" width="195px" height="422px" src="https://github.com/ahmetgsu/wehorse-assignment/blob/main/app/assets/images/08.png" />
+
+<img align="left" alt="video-cards" width="195px" height="422px" src="https://github.com/ahmetgsu/wehorse-assignment/blob/main/app/assets/images/09.png" />
+
+<img align="left" alt="video-card-expanded" width="195px" height="422px" src="https://github.com/ahmetgsu/wehorse-assignment/blob/main/app/assets/images/10.png" />
+
+<!-- ![SS2](./app/assets/images/02.png)
 
 ![SS3](./app/assets/images/03.png)
 
@@ -47,4 +64,4 @@ $ npx pod-install ios
 
 ![SS9](./app/assets/images/09.png)
 
-![SS10](./app/assets/images/10.png)
+![SS10](./app/assets/images/10.png) -->
