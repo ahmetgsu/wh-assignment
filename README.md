@@ -28,22 +28,12 @@ $ npx pod-install ios
 
 ### ScreenShots
 
-![SS1](./app/assets/images/01.png)
+![SS1](./app/assets/images/01.png) ![SS2](./app/assets/images/02.png)
 
-![SS2](./app/assets/images/02.png)
+![SS3](./app/assets/images/03.png) ![SS4](./app/assets/images/04.png)
 
-![SS3](./app/assets/images/03.png)
+![SS5](./app/assets/images/05.png) ![SS6](./app/assets/images/06.png)
 
-![SS4](./app/assets/images/04.png)
+![SS7](./app/assets/images/07.png) ![SS8](./app/assets/images/08.png)
 
-![SS5](./app/assets/images/05.png)
-
-![SS6](./app/assets/images/06.png)
-
-![SS7](./app/assets/images/07.png)
-
-![SS8](./app/assets/images/08.png)
-
-![SS9](./app/assets/images/09.png)
-
-![SS10](./app/assets/images/10.png)
+![SS9](./app/assets/images/09.png) ![SS10](./app/assets/images/10.png)
