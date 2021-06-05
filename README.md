@@ -28,7 +28,7 @@ $ npx pod-install ios
 
 ### ScreenShots
 
-<!-- ![SS1](./app/assets/images/01.png)
+![SS1](./app/assets/images/01.png)
 
 ![SS2](./app/assets/images/02.png)
 
@@ -46,4 +46,4 @@ $ npx pod-install ios
 
 ![SS9](./app/assets/images/09.png)
 
-![SS10](./app/assets/images/10.png) -->
+![SS10](./app/assets/images/10.png)
