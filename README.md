@@ -29,6 +29,7 @@ $ npx pod-install ios
 ### ScreenShots
 
 ![SS1](./app/assets/images/01.png =195x422)
+<img align="left" alt="splash-screen" width="195px" height="422px" src="https://github.com/ahmetgsu/wehorse-assignment/blob/main/app/assets/images/01.png" />
 
 ![SS2](./app/assets/images/02.png)
 
