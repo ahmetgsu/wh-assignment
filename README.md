@@ -34,6 +34,8 @@ $ npx pod-install ios
 
 ![SS5](./app/assets/images/05.png) ![SS6](./app/assets/images/06.png)
 
-![SS7](./app/assets/images/07.png) ![SS8](./app/assets/images/08.png)
+![SS7](./app/assets/images/07.png) ![SS11](./app/assets/images/11.png)
 
-![SS9](./app/assets/images/09.png) ![SS10](./app/assets/images/10.png)
+![SS8](./app/assets/images/08.png) ![SS9](./app/assets/images/09.png)
+
+![SS10](./app/assets/images/10.png)
