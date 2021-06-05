@@ -15,16 +15,18 @@ $ git clone https://github.com/ahmetgsu/wehorse-assignment.git
 
 $ cd wehorse-assignment/
 
-$ npm install
+$ yarn
   or
-  yarn
+  npm install
 
-$ npx pod-install ios
+  (I suggest using yarn instead of npm)
+
+$ cd ios && pod install
 ```
 
 ### Run on iOS
 
-- Run `npx react-native run-ios` in your terminal
+- Run `npx react-native run-ios` in your terminal, on the root folder of the project
 
 ### ScreenShots
 
