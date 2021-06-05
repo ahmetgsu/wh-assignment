@@ -33,7 +33,7 @@ export interface CourseListProps {
   courseNew: boolean;
   courseSlug: string;
   courseTitle: string;
-  courseTrainerList: TrainerList;
+  courseTrainerList: Array<TrainerList>;
   progress: null;
   source: null;
 }
