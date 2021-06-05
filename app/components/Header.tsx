@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, {FC} from 'react';
 import {
   Image,
   Platform,
@@ -6,11 +6,11 @@ import {
   StyleSheet,
   TouchableOpacity,
   View,
-  Text
+  Text,
 } from 'react-native';
 import {Appbar} from 'react-native-paper';
-import { colors } from '../styles/common-styles';
-import { useNavigation } from '@react-navigation/native';
+import {colors} from '../styles/common-styles';
+import {useNavigation} from '@react-navigation/native';
 
 const ios = Platform.OS === 'ios';
 
@@ -18,10 +18,12 @@ interface Props {
   color?: string;
   title?: string;
   showBack?: boolean;
+  action?: () => void;
+  actionText?: string;
 }
 
-const Header: FC<Props> = ({color, title, showBack}) => {
-  const navigation = useNavigation()
+const Header: FC<Props> = ({color, title, showBack, action, actionText}) => {
+  const navigation = useNavigation();
   const goBack = () => {
     navigation.goBack();
   };
@@ -36,23 +38,31 @@ const Header: FC<Props> = ({color, title, showBack}) => {
         barStyle={'dark-content'}
       />
       <Appbar.Header style={[styles.header]}>
-        <View style={{flex:1, flexDirection: 'row'}}>
-          {showBack ? <TouchableOpacity onPress={goBack} style={styles.backContainer}>
-            <Image
-              source={backIcon}
-              style={[styles.backIcon, {tintColor: color}]}
-            />
-          </TouchableOpacity> : <View style={styles.backContainer}></View>}
+        <View style={{flex: 1, flexDirection: 'row'}}>
+          {showBack ? (
+            <TouchableOpacity onPress={goBack} style={styles.backContainer}>
+              <Image
+                source={backIcon}
+                style={[styles.backIcon, {tintColor: color}]}
+              />
+            </TouchableOpacity>
+          ) : (
+            <View style={styles.backContainer}></View>
+          )}
           {title ? (
             <View style={styles.title}>
-              <Text style={{color: color, fontSize: 20}}>
-                {title}
-              </Text>
+              <Text style={{color: color, fontSize: 22}}>{title}</Text>
             </View>
           ) : (
             <View style={styles.title}></View>
-          )}  
+          )}
+          {action ? (
+            <TouchableOpacity style={styles.action} onPress={action}>
+              <Text style={{color: color, fontSize: 18}}>{actionText}</Text>
+            </TouchableOpacity>
+          ) : (
             <View style={styles.action}></View>
+          )}
         </View>
       </Appbar.Header>
     </>
@@ -65,7 +75,7 @@ const styles = StyleSheet.create({
   header: {
     elevation: 3,
     marginTop: StatusBar.currentHeight,
-    backgroundColor: colors.white
+    backgroundColor: colors.white,
   },
   backIcon: {
     width: 36,
@@ -83,6 +93,6 @@ const styles = StyleSheet.create({
   action: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'flex-end',
+    alignItems: 'center',
   },
 });

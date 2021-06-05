@@ -1,55 +1,32 @@
-import React, { FC } from 'react'
-import { FlatList, Image, StyleSheet, Text, View } from 'react-native'
-import { Card, Title} from 'react-native-paper'
-import { useNavigation } from '@react-navigation/native';
+import React, {FC, ReactElement, useEffect, useState} from 'react';
+import {FlatList, StyleSheet, View} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import {Item} from '../../types/courses';
+import CourseCard from './CourseCard';
 
 interface Props {
   data: object[];
 }
 
-interface Item {
-  courseImage: string;
-  courseTitle: string;
-  courseTrainerList?: TrainerList[];
-}
+const CourseList: FC<Props> = props => {
+  const {data} = props;
+  const navigation = useNavigation();
 
-interface TrainerList {
-  trainerAvatar: string;
-  trainerAvatarAlt: string;
-  trainerFirstName: string;
-  trainerLastName: string;
-  trainerId: number;
-  trainerSlug: string;
-}
+  const [isVisible, setIsVisible] = useState(false);
 
-const CourseList: FC<Props> = (props) => {
-  const { data } = props
-  const navigation = useNavigation()
+  useEffect(() => {
+    setTimeout(() => setIsVisible(true), 1500);
+  }, []);
 
   const onPressItem = () => {
-    navigation.navigate('CourseDetails')
-  }
+    navigation.navigate('CourseDetails');
+  };
 
-  const renderCard = ({item, index}: {
-    item: Item;
-    index: string;
-  }
-    ) => {
-    const avatar: string | undefined = item.courseTrainerList && item.courseTrainerList[0].trainerAvatar
-    const name: string | undefined = item.courseTrainerList && `${item.courseTrainerList[0].trainerFirstName} ${item.courseTrainerList[0].trainerLastName}`
-    return(
-      <Card style={styles.card} elevation={5} onPress={onPressItem}>
-        <Card.Cover source={{ uri: item.courseImage }} style={{borderTopLeftRadius: 10, borderTopRightRadius: 10}}/>
-        <Card.Content>
-          <Title style={{fontSize: 18}}>{item.courseTitle}</Title>
-          <View style={{flexDirection: 'row', justifyContent:'flex-start', alignItems: 'center'}}>
-          <Image source={{uri: avatar}} style={{width: 30, height: 30, borderRadius: 15, marginRight: 20}} />
-          <Text>{name}</Text>
-          </View>
-        </Card.Content>
-      </Card>
-    )
-  }
+  const renderCard = ({item}: {item: Item}): ReactElement => {
+    return (
+      <CourseCard isVisible={isVisible} onPressItem={onPressItem} item={item} />
+    );
+  };
 
   return (
     <View style={styles.listContainer}>
@@ -63,25 +40,19 @@ const CourseList: FC<Props> = (props) => {
         renderItem={renderCard}
       />
     </View>
-  )
-}
+  );
+};
 
-export default CourseList
+export default CourseList;
 
 const styles = StyleSheet.create({
   listContainer: {
     flex: 1,
-    paddingHorizontal: 10,
   },
   contentContainer: {
-    paddingBottom: 35
+    paddingBottom: 35,
   },
   flatList: {
     paddingTop: 15,
   },
-  card:{
-    marginHorizontal: 5,
-    borderRadius: 10,
-    marginBottom: 15
-  }
-})
+});

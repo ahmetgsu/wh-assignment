@@ -7,3 +7,5 @@ export const android = Platform.OS === 'android';
 //Dimensions
 export const height = Dimensions.get('window').height;
 export const width = Dimensions.get('window').width;
+
+export const videoPlayerRatio = 220 / 390
