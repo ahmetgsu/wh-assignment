@@ -26,8 +26,6 @@ const CourseDetails: FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const player = useRef(null);
 
-  console.log('course-detail', course.courseDetail);
-
   const {
     courseTrailerSrc,
     courseRidingDifficulty,
