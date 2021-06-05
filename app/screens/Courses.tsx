@@ -6,6 +6,9 @@ import * as courses from '../data/courses.json';
 import CourseList from '../components/courses/CourseList';
 import {Category} from '../types/courses';
 import FilterModal from '../components/courses/FilterModal';
+import {width, height} from '../helpers/device';
+console.log('height', height);
+console.log('width', width);
 
 const Courses: FC = () => {
   const [isVisible, setIsVisible] = useState(false);

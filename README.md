@@ -28,7 +28,7 @@ $ npx pod-install ios
 
 ### ScreenShots
 
-![SS1](./app/assets/images/01.png)
+![SS1](./app/assets/images/01.png=195*422)
 
 ![SS2](./app/assets/images/02.png)
 
