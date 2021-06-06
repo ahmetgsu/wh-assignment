@@ -34,7 +34,7 @@ $ cd ios && pod install
 - To dive deep into Typescript.
 - To learn and implement javascript testing using Jest.
 - To practice native animation feature.
-- Improve user experience by adding ghost loader while course cards and video are loading.
+- To improve user experience by adding ghost loader while course cards and video are loading.
 
 * Users are able to filter courses according to course categories.
 * Users may stream the course video on the course detail screen.
