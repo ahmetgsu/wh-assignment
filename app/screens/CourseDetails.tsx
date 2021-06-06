@@ -7,7 +7,7 @@ import {
   LayoutAnimation,
 } from 'react-native';
 import Header from '../components/Header';
-import {colors} from '../styles/common-styles';
+import {colors, commonStyles} from '../styles/common-styles';
 import Video from 'react-native-video';
 import * as course from '../data/course.json';
 import {width, videoPlayerRatio} from '../helpers/device';
@@ -37,11 +37,7 @@ const CourseDetails: FC = () => {
     courseVideoList,
   } = course.courseDetail;
 
-  const onBuffer = () => {};
-  const videoError = () => {};
-  const onVideoLoad = () => {
-    setIsVisible(true);
-  };
+  const onVideoLoad = () => setIsVisible(true);
 
   const toggleSection = () => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
@@ -49,16 +45,17 @@ const CourseDetails: FC = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={commonStyles.container}>
       <Header title="Course Detail" showBack color={colors.main} />
-      <ScrollView style={styles.content} contentContainerStyle={styles.bottom}>
+      <ScrollView
+        style={commonStyles.content}
+        contentContainerStyle={styles.bottom}
+        showsVerticalScrollIndicator={false}>
         <ShimmerPlaceholder visible={isVisible} style={styles.backgroundVideo}>
           <Video
-            source={{uri: courseTrailerSrc, type: 'm3u8'}}
+            source={{uri: courseTrailerSrc}}
             ref={player}
-            onBuffer={onBuffer}
             controls={true}
-            onError={videoError}
             onLoad={() => onVideoLoad()}
             paused={true}
             posterResizeMode="cover"
@@ -79,8 +76,8 @@ const CourseDetails: FC = () => {
           />
           <Trainers trainerList={courseTrainerList} />
           <VideoList
-            courseVideoCount={courseVideoCount}
-            courseVideoList={courseVideoList}
+            videoCount={courseVideoCount}
+            videoList={courseVideoList}
           />
         </View>
       </ScrollView>
@@ -91,13 +88,6 @@ const CourseDetails: FC = () => {
 export default CourseDetails;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.white,
-  },
-  content: {
-    flex: 1,
-  },
   bottom: {
     paddingBottom: 35,
   },

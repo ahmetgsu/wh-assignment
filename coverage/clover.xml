@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1622982946881" clover="3.2.0">
-  <project timestamp="1622982946881" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5" elements="17" coveredelements="17" complexity="0" loc="10" ncloc="10" packages="1" files="2" classes="2"/>
-    <file name="unique-values.tsx" path="/Users/akenar/Documents/assignments/WeHorseTSAssignment/app/helpers/unique-values.tsx">
-      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="7" count="1" type="cond" truecount="2" falsecount="0"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="12" count="1" type="stmt"/>
-      <line num="13" count="3" type="stmt"/>
-    </file>
-    <file name="video-list.tsx" path="/Users/akenar/Documents/assignments/WeHorseTSAssignment/app/helpers/video-list.tsx">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="4" type="stmt"/>
-    </file>
+<coverage generated="1623019570425" clover="3.2.0">
+  <project timestamp="1623019570425" name="All files">
+    <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7" elements="24" coveredelements="24" complexity="0" loc="15" ncloc="15" packages="2" files="4" classes="4"/>
+    <package name="helpers">
+      <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="7"/>
+      <file name="filter-courses.tsx" path="/Users/akenar/Documents/assignments/WeHorseTSAssignment/app/helpers/filter-courses.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+      </file>
+      <file name="unique-values.tsx" path="/Users/akenar/Documents/assignments/WeHorseTSAssignment/app/helpers/unique-values.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+      </file>
+      <file name="video-list.tsx" path="/Users/akenar/Documents/assignments/WeHorseTSAssignment/app/helpers/video-list.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="mock">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="mock-data.tsx" path="/Users/akenar/Documents/assignments/WeHorseTSAssignment/app/mock/mock-data.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

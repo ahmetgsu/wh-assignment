@@ -1,7 +1,6 @@
 import React, {FC} from 'react';
 import {
   Image,
-  Platform,
   StatusBar,
   StyleSheet,
   TouchableOpacity,
@@ -10,8 +9,7 @@ import {
 } from 'react-native';
 import {Appbar} from 'react-native-paper';
 import {colors} from '../styles/common-styles';
-
-const ios = Platform.OS === 'ios';
+import {ios} from '../helpers/device';
 
 interface Props {
   action?: () => void;

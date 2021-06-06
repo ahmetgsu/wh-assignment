@@ -1,22 +1,23 @@
 import React, {FC, useEffect, useState} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {View} from 'react-native';
 import Header from '../components/Header';
-import {colors} from '../styles/common-styles';
+import {colors, commonStyles} from '../styles/common-styles';
 import * as courses from '../data/courses.json';
 import CourseList from '../components/courses/CourseList';
 import {Category, CourseListProps} from '../types/courses';
 import FilterModal from '../components/courses/FilterModal';
 import {getUniqueValues} from '../helpers/unique-values';
+import {filterCourses} from '../helpers/filter-courses';
 
 const initialData = courses.courseCards as CourseListProps[];
 
 const Courses: FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState<Category | null>(null);
+  console.log('initialData', initialData);
+  console.log('selectedItem', selectedItem);
   const [categories, setCategories] = useState<Array<Category>>([]);
   const [data, setData] = useState(initialData);
-  console.log('data', data);
-  console.log('courses', courses);
 
   const openModal = () => {
     setIsVisible(true);
@@ -32,33 +33,30 @@ const Courses: FC = () => {
   }, []);
 
   useEffect(() => {
-    if (selectedItem) {
-      let newData: CourseListProps[] = initialData.filter(
-        item => item.courseMainCategory.categoryId === selectedItem.categoryId,
-      );
-      setData(newData);
-    } else {
-      setData(initialData);
-    }
+    selectedItem ? showFilteredResult() : showAllResults();
   }, [selectedItem]);
 
+  const showFilteredResult = (): void => {
+    let newData: CourseListProps[] = filterCourses(initialData, selectedItem);
+    setData(newData);
+  };
+
+  const showAllResults = () => setData(initialData);
+
   const handleSelect = (item: Category) => {
-    if (selectedItem?.categoryId === item.categoryId) {
-      setSelectedItem(null);
-    } else {
-      setSelectedItem(item);
-    }
+    const isFilterSelected = selectedItem?.categoryId === item.categoryId;
+    isFilterSelected ? setSelectedItem(null) : setSelectedItem(item);
   };
 
   return (
-    <View style={styles.container}>
+    <View style={commonStyles.container}>
       <Header
         title="All Courses"
         color={colors.main}
         action={openModal}
         actionText="Filter"
       />
-      <View style={styles.content}>
+      <View style={commonStyles.content}>
         <CourseList data={data} />
       </View>
       <FilterModal
@@ -74,20 +72,3 @@ const Courses: FC = () => {
 };
 
 export default Courses;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.white,
-  },
-  content: {
-    flex: 1,
-  },
-  footer: {
-    marginHorizontal: 15,
-    position: 'absolute',
-    bottom: 25,
-    left: 0,
-    right: 0,
-  },
-});

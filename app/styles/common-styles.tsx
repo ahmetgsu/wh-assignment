@@ -1,6 +1,4 @@
 export const colors = {
-  splashGradientColor: ['rgb(62, 65, 247)', 'rgb(155, 114, 252)'],
-  profileGradientColor: ['rgb(26, 27, 87)', 'rgb(96, 62, 176)'],
   white: '#fff',
   main: '#87b726',
   gray: 'rgb(216,216,216)',
@@ -12,4 +10,14 @@ export const colors = {
   blue: 'rgb(62,65,247)',
   black: '#000',
   black1: 'rgb(57,57,57)',
+};
+
+export const commonStyles = {
+  container: {
+    flex: 1,
+    backgroundColor: colors.white,
+  },
+  content: {
+    flex: 1,
+  },
 };

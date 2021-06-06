@@ -31,7 +31,13 @@ const FilterModal: FC<Props> = ({
   setIsVisible,
 }) => {
   return (
-    <Modal isVisible={isVisible} coverScreen style={styles.modal}>
+    <Modal
+      isVisible={isVisible}
+      coverScreen
+      hasBackdrop={false}
+      style={styles.modal}
+      animationIn="slideInRight"
+      animationOut="bounceOutRight">
       <ModalHeader action={closeModal} />
       <ScrollView style={{flex: 1}}>
         <View style={{marginTop: 5}}>

@@ -8,11 +8,11 @@ import {CardDetails, Video} from '../../types/course-details';
 type Details = CardDetails | null;
 
 interface Props {
-  courseVideoCount: number;
-  courseVideoList: Array<Video>;
+  videoCount: number;
+  videoList: Array<Video>;
 }
 
-const VideoList: FC<Props> = ({courseVideoCount, courseVideoList}) => {
+const VideoList: FC<Props> = ({videoCount, videoList}) => {
   const [cardDetail, setCardDetail] = useState<Details>(null);
 
   const toggleCard = (item: any) => {
@@ -31,11 +31,9 @@ const VideoList: FC<Props> = ({courseVideoCount, courseVideoList}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
-        {courseVideoCount > 1
-          ? `${courseVideoCount} Videos`
-          : `${courseVideoCount} Video`}
+        {videoCount > 1 ? `${videoCount} Videos` : `${videoCount} Video`}
       </Text>
-      {courseVideoList.map((video: Video, i: number) => (
+      {videoList.map((video: Video, i: number) => (
         <View key={i} style={{marginTop: 15}}>
           <Card
             style={styles.card}
