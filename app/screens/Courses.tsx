@@ -4,14 +4,19 @@ import Header from '../components/Header';
 import {colors} from '../styles/common-styles';
 import * as courses from '../data/courses.json';
 import CourseList from '../components/courses/CourseList';
-import {Category} from '../types/courses';
+import {Category, CourseListProps} from '../types/courses';
 import FilterModal from '../components/courses/FilterModal';
+import {getUniqueValues} from '../helpers/unique-values';
+
+const initialData = courses.courseCards as CourseListProps[];
 
 const Courses: FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState<Category | null>(null);
-  const [categories, setCategories] = useState([]);
-  const [data, setData] = useState(courses.courseCards);
+  const [categories, setCategories] = useState<Array<Category>>([]);
+  const [data, setData] = useState(initialData);
+  console.log('data', data);
+  console.log('courses', courses);
 
   const openModal = () => {
     setIsVisible(true);
@@ -22,27 +27,18 @@ const Courses: FC = () => {
   };
 
   useEffect(() => {
-    let categoriesArray: any = [];
-    courses.courseCards.map((item, i) => {
-      if (
-        !categoriesArray.find(
-          a => a.categoryId === item.courseMainCategory.categoryId,
-        )
-      ) {
-        categoriesArray.push(item.courseMainCategory);
-      }
-    });
-    setCategories(categoriesArray);
+    const uniqueCategories = getUniqueValues(initialData);
+    setCategories(uniqueCategories);
   }, []);
 
   useEffect(() => {
     if (selectedItem) {
-      let newData = courses.courseCards.filter(
+      let newData: CourseListProps[] = initialData.filter(
         item => item.courseMainCategory.categoryId === selectedItem.categoryId,
       );
       setData(newData);
     } else {
-      setData(courses.courseCards);
+      setData(initialData);
     }
   }, [selectedItem]);
 
