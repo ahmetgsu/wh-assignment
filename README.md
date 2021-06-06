@@ -24,9 +24,20 @@ $ yarn
 $ cd ios && pod install
 ```
 
-### Run on iOS
+### Run on iOS 📱
 
 - Run `npx react-native run-ios` in your terminal, on the root folder of the project
+
+### Aim of the project 🎯
+
+- To make a react native application that allows users to see all available courses and the detail of a specific course.
+- To dive deep into Typescript.
+- To learn and implement javascript testing using Jest.
+- To practice native animation feature.
+- Improve user experience by adding ghost loader while course cards and video are loading.
+
+* Users are able to filter courses according to course categories.
+* Users may stream the course video on the course detail screen.
 
 ### ScreenShots
 
