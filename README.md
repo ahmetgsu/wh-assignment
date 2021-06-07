@@ -47,8 +47,8 @@ $ cd ios && pod install
 
 ![SS5](./app/assets/images/14.png) ![SS6](./app/assets/images/06.png)
 
-![SS7](./app/assets/images/07.png) ![SS11](./app/assets/images/07_1.png)
+![SS7](./app/assets/images/16.png) ![SS11](./app/assets/images/21.png)
 
-![SS8](./app/assets/images/08.png) ![SS9](./app/assets/images/09.png)
+![SS8](./app/assets/images/18.png) ![SS9](./app/assets/images/19.png)
 
-![SS10](./app/assets/images/10.png)
+![SS10](./app/assets/images/20.png)
