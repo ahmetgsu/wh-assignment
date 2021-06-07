@@ -49,12 +49,14 @@ const FilterModal: FC<Props> = ({
                 style={styles.touchable}>
                 <CheckBox
                   disabled={false}
-                  tintColor={colors.main}
+                  onTintColor={colors.main}
+                  lineWidth={1.5}
                   onCheckColor={colors.main}
-                  hideBox={true}
                   value={selectedItem?.categoryName === item.categoryName}
                 />
-                <Text style={{fontSize: 16}}>{item.categoryName}</Text>
+                <Text style={{fontSize: 16, marginLeft: 15}}>
+                  {item.categoryName}
+                </Text>
               </TouchableOpacity>
             ))}
           </View>

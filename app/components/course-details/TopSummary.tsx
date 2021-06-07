@@ -38,29 +38,30 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     marginBottom: 15,
-    marginTop: 10,
+    marginTop: 24,
+    paddingHorizontal: 24,
   },
   firstTextContainer: {
     padding: 2,
     borderRadius: 20,
     borderWidth: 1,
-    borderColor: colors.gray4,
-    marginRight: 15,
+    borderColor: colors.textSecondary,
   },
   firstText: {
     paddingHorizontal: 10,
     paddingVertical: 2,
-    color: colors.gray4,
+    color: colors.textSecondary,
   },
   secondTextContainer: {
     padding: 2,
     borderRadius: 20,
     borderWidth: 1,
-    borderColor: colors.gray4,
+    borderColor: colors.textSecondary,
+    marginLeft: 6,
   },
   secondText: {
     paddingHorizontal: 10,
     paddingVertical: 2,
-    color: colors.gray4,
+    color: colors.textSecondary,
   },
 });

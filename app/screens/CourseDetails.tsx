@@ -18,6 +18,8 @@ import Trainers from '../components/course-details/Trainers';
 import VideoList from '../components/course-details/VideoList';
 import {createShimmerPlaceholder} from 'react-native-shimmer-placeholder';
 import LinearGradient from 'react-native-linear-gradient';
+import Title from '../components/course-details/Title';
+import {Divider} from 'react-native-paper';
 
 const ShimmerPlaceholder = createShimmerPlaceholder(LinearGradient);
 
@@ -67,14 +69,17 @@ const CourseDetails: FC = () => {
             ridingDifficulty={courseRidingDifficulty}
             videoCount={courseVideoCount}
           />
-          <Text style={styles.title}>{courseTitle}</Text>
+          <Title courseTitle={courseTitle} />
           <CourseContent benefitsList={courseBenefitsList} />
+          <Divider />
           <Description
             showSection={showSection}
             toggleSection={toggleSection}
             desc={courseDescription}
           />
+          <Divider />
           <Trainers trainerList={courseTrainerList} />
+          <Divider style={{height: 25, opacity: 0.4, marginTop: 24}} />
           <VideoList
             videoCount={courseVideoCount}
             videoList={courseVideoList}
@@ -101,12 +106,7 @@ const styles = StyleSheet.create({
     height: width * videoPlayerRatio,
   },
   details: {
-    marginTop: width * videoPlayerRatio + 10,
-    paddingHorizontal: 15,
-  },
-  title: {
-    fontSize: 16,
-    lineHeight: 24,
-    fontWeight: 'bold',
+    marginTop: width * videoPlayerRatio,
+    paddingHorizontal: 0,
   },
 });

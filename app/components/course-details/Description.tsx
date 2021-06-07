@@ -11,6 +11,16 @@ interface Props {
 }
 
 const Description: FC<Props> = ({showSection, toggleSection, desc}) => {
+  console.log('desc', desc);
+  const customStyle = {
+    p: {
+      fontSize: 14,
+      lineHeight: 23,
+      color: colors.text,
+      marginTop: 16,
+      marginBottom: 16,
+    },
+  };
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={toggleSection}>
@@ -29,7 +39,13 @@ const Description: FC<Props> = ({showSection, toggleSection, desc}) => {
           )}
         </View>
       </TouchableOpacity>
-      {!showSection && <HTML source={{html: desc}} contentWidth={width} />}
+      {!showSection && (
+        <HTML
+          source={{html: desc}}
+          contentWidth={width}
+          tagsStyles={customStyle}
+        />
+      )}
     </View>
   );
 };
@@ -38,15 +54,16 @@ export default Description;
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 25,
+    paddingHorizontal: 24,
   },
   titleContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    height: 95,
   },
   title: {
-    color: colors.black1,
+    color: colors.text,
     fontSize: 16,
   },
   imageDown: {

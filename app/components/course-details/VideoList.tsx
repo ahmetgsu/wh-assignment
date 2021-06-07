@@ -30,9 +30,11 @@ const VideoList: FC<Props> = ({videoCount, videoList}) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>
-        {videoCount > 1 ? `${videoCount} Videos` : `${videoCount} Video`}
-      </Text>
+      <View style={styles.titleContainer}>
+        <Text style={styles.title}>
+          {videoCount > 1 ? `${videoCount} Videos` : `${videoCount} Video`}
+        </Text>
+      </View>
       {videoList.map((video: Video, i: number) => (
         <View key={i} style={{marginTop: 15}}>
           <Card
@@ -48,11 +50,13 @@ const VideoList: FC<Props> = ({videoCount, videoList}) => {
                   />
                 </View>
                 <View style={{flex: 6}}>
-                  <Text>{video.videoTitle}</Text>
+                  <Text style={styles.videoTitle}>{video.videoTitle}</Text>
                 </View>
               </View>
               <View style={styles.timeContainer}>
-                <Text>{timeConverter(video.videoDuration)}</Text>
+                <Text style={styles.time}>
+                  {timeConverter(video.videoDuration)}
+                </Text>
               </View>
               {cardDetail?.id === video.videoId && (
                 <View style={{marginTop: 15}}>
@@ -80,11 +84,23 @@ export default VideoList;
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
+    paddingHorizontal: 24,
+  },
+  titleContainer: {
+    marginVertical: 20,
+    alignItems: 'center',
   },
   title: {
-    color: colors.black1,
+    color: colors.text,
     fontSize: 16,
+  },
+  videoTitle: {
+    fontSize: 15,
+    color: colors.secondary,
+  },
+  time: {
+    fontSize: 12,
+    color: colors.secondary,
   },
   cardContent: {
     flexDirection: 'row',

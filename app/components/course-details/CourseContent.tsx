@@ -16,7 +16,9 @@ const CourseContent: FC<Props> = ({benefitsList}) => {
             source={require('../../assets/icons/checked.png')}
             style={styles.image}
           />
-          <Text style={styles.text}>{benefit}</Text>
+          <View style={styles.textContainer}>
+            <Text style={styles.text}>{benefit}</Text>
+          </View>
         </View>
       ))}
     </View>
@@ -28,25 +30,35 @@ export default CourseContent;
 const styles = StyleSheet.create({
   container: {
     marginTop: 15,
-    marginRight: 15,
+    paddingHorizontal: 24,
+    marginBottom: 40,
   },
   title: {
-    color: colors.black1,
+    color: colors.text,
     fontSize: 16,
-    paddingBottom: 15,
+    paddingBottom: 24,
+    fontWeight: '400',
   },
   itemContainer: {
-    marginBottom: 10,
+    flex: 1,
+    marginBottom: 24,
     flexDirection: 'row',
-    alignItems: 'center',
   },
   image: {
     width: 15,
     height: 15,
+    marginRight: 24,
+  },
+  imageContainer: {
+    flex: 1,
+  },
+  textContainer: {
+    flex: 4,
+    paddingRight: 15,
   },
   text: {
     fontSize: 14,
-    textAlign: 'left',
-    paddingLeft: 15,
+    // textAlign: 'left',
+    lineHeight: 21,
   },
 });

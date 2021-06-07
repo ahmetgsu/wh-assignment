@@ -6,6 +6,8 @@ import {width} from '../../helpers/device';
 import {Card, Title} from 'react-native-paper';
 import {CourseListProps} from '../../types/courses';
 import {getUserAvatar, getUserName} from '../../helpers/user-info';
+import HeartButton from '../HeartButton';
+import {colors} from '../../styles/common-styles';
 
 const ShimmerPlaceholder = createShimmerPlaceholder(LinearGradient);
 
@@ -22,6 +24,7 @@ const CourseCard: FC<Props> = ({
   onPressItem,
   item,
 }): ReactElement => {
+  console.log('item', item);
   const avatar: Combined = getUserAvatar(item);
   const name: Combined = getUserName(item);
 
@@ -29,10 +32,18 @@ const CourseCard: FC<Props> = ({
     <ShimmerPlaceholder
       visible={isVisible}
       style={isVisible ? styles.card : styles.shimmerCard}>
+      <View style={styles.heartContainer}>
+        <HeartButton />
+      </View>
+      {item.courseNew && (
+        <View style={styles.newContainer}>
+          <Text style={styles.newText}>NEW</Text>
+        </View>
+      )}
       <Card style={styles.card} elevation={5} onPress={onPressItem}>
         <Card.Cover source={{uri: item.courseImage}} style={styles.cardCover} />
         <Card.Content>
-          <Title style={{fontSize: 18}}>{item.courseTitle}</Title>
+          <Title style={styles.title}>{item.courseTitle}</Title>
           <View style={styles.imageContainer}>
             <Image source={{uri: avatar}} style={styles.avatar} />
             <Text>{name}</Text>
@@ -72,5 +83,32 @@ const styles = StyleSheet.create({
   cardCover: {
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
+  },
+  heartContainer: {
+    position: 'absolute',
+    top: 178,
+    right: 24,
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    zIndex: 10,
+  },
+  title: {
+    fontSize: 18,
+    marginTop: 18,
+    lineHeight: 27,
+    marginBottom: 15,
+  },
+  newContainer: {
+    position: 'absolute',
+    top: 11,
+    left: 11,
+    backgroundColor: colors.white,
+    zIndex: 10,
+    borderRadius: 8,
+  },
+  newText: {
+    paddingVertical: 5,
+    paddingHorizontal: 8,
+    fontSize: 10,
   },
 });

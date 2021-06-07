@@ -41,11 +41,11 @@ $ cd ios && pod install
 
 ### ScreenShots
 
-![SS1](./app/assets/images/01.png) ![SS2](./app/assets/images/02.png)
+![SS1](./app/assets/images/01.png) ![SS2](./app/assets/images/15.png)
 
-![SS3](./app/assets/images/03.png) ![SS4](./app/assets/images/04.png)
+![SS3](./app/assets/images/12.png) ![SS4](./app/assets/images/13.png)
 
-![SS5](./app/assets/images/05.png) ![SS6](./app/assets/images/06.png)
+![SS5](./app/assets/images/14.png) ![SS6](./app/assets/images/06.png)
 
 ![SS7](./app/assets/images/07.png) ![SS11](./app/assets/images/07_1.png)
 

@@ -48,6 +48,7 @@ export default React.memo(Trainers, areEqual);
 const styles = StyleSheet.create({
   container: {
     marginTop: 25,
+    paddingHorizontal: 24,
   },
   title: {
     color: colors.black1,
