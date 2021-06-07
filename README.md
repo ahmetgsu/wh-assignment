@@ -39,6 +39,10 @@ $ cd ios && pod install
 * Users are able to filter courses according to course categories.
 * Users may stream the course video on the course detail screen.
 
+### Demo
+
+![Demo](./app/assets/images/app-flow.gif)
+
 ### ScreenShots
 
 ![SS1](./app/assets/images/01.png) ![SS2](./app/assets/images/15.png)
