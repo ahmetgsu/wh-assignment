@@ -8,7 +8,10 @@ const HeartButton = () => {
 
   const toggleState = () => setIsLiked(prev => !prev);
   return (
-    <TouchableOpacity style={styles.touchable} onPress={toggleState}>
+    <TouchableOpacity
+      style={styles.touchable}
+      onPress={toggleState}
+      activeOpacity={0.8}>
       <View style={styles.container}>
         {isLiked ? (
           <Image
