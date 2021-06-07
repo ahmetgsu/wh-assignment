@@ -24,7 +24,6 @@ const CourseCard: FC<Props> = ({
 }): ReactElement => {
   const avatar: Combined = getUserAvatar(item);
   const name: Combined = getUserName(item);
-  console.log('name', name);
 
   return (
     <ShimmerPlaceholder
