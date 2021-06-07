@@ -11,7 +11,6 @@ interface Props {
 }
 
 const Description: FC<Props> = ({showSection, toggleSection, desc}) => {
-  console.log('desc', desc);
   const customStyle = {
     p: {
       fontSize: 14,

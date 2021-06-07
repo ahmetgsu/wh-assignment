@@ -60,14 +60,14 @@ const styles = StyleSheet.create({
   card: {
     marginHorizontal: 5,
     borderRadius: 10,
-    marginBottom: 10,
+    marginBottom: 15,
   },
   shimmerCard: {
     height: 200,
     width: '95%',
     marginHorizontal: 10,
     borderRadius: 10,
-    marginBottom: 10,
+    marginBottom: 15,
   },
   imageContainer: {
     flexDirection: 'row',
