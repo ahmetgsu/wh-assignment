@@ -11,9 +11,9 @@
 On the command prompt run the following commands
 
 ```sh
-$ git clone https://github.com/ahmetgsu/wehorse-assignment.git
+$ git clone https://github.com/ahmetgsu/wh-assignment.git
 
-$ cd wehorse-assignment/
+$ cd wh-assignment/
 
 $ yarn
   or
