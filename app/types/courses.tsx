@@ -10,7 +10,7 @@ export type Category = {
 export interface Item {
   courseImage: string;
   courseTitle: string;
-  courseTrainerList?: TrainerList[];
+  courseTrainerList?: [TrainerList];
 }
 
 export type TrainerList = {
@@ -41,7 +41,7 @@ export interface CourseListProps {
   courseNew: boolean;
   courseSlug: string;
   courseTitle: string;
-  courseTrainerList: [TrainerList];
+  courseTrainerList?: [TrainerList] | undefined;
   progress: any;
   source: any;
 }
