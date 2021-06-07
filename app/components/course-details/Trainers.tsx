@@ -36,7 +36,14 @@ const Trainers: FC<Props> = ({trainerList}) => {
   );
 };
 
-export default Trainers;
+const areEqual = (prevProps: Props, nextProps: Props) => {
+  return (
+    JSON.stringify(nextProps.trainerList) ===
+    JSON.stringify(prevProps.trainerList)
+  );
+};
+
+export default React.memo(Trainers, areEqual);
 
 const styles = StyleSheet.create({
   container: {

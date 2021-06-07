@@ -1,14 +1,8 @@
 import React, {FC} from 'react';
-import {
-  Image,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-  useWindowDimensions,
-} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {colors} from '../../styles/common-styles';
 import HTML from 'react-native-render-html';
+import {width} from '../../helpers/device';
 
 interface Props {
   showSection: boolean;
@@ -17,7 +11,6 @@ interface Props {
 }
 
 const Description: FC<Props> = ({showSection, toggleSection, desc}) => {
-  const contentWidth = useWindowDimensions().width;
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={toggleSection}>
@@ -36,9 +29,7 @@ const Description: FC<Props> = ({showSection, toggleSection, desc}) => {
           )}
         </View>
       </TouchableOpacity>
-      {!showSection && (
-        <HTML source={{html: desc}} contentWidth={contentWidth} />
-      )}
+      {!showSection && <HTML source={{html: desc}} contentWidth={width} />}
     </View>
   );
 };

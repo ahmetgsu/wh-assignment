@@ -14,8 +14,6 @@ const initialData = courses.courseCards as CourseListProps[];
 const Courses: FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState<Category | null>(null);
-  console.log('initialData', initialData);
-  console.log('selectedItem', selectedItem);
   const [categories, setCategories] = useState<Array<Category>>([]);
   const [data, setData] = useState(initialData);
 

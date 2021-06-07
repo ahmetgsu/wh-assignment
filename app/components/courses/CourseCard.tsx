@@ -1,29 +1,30 @@
-import React, {FC, ReactElement} from 'react';
+import React, {FC, ReactElement, useMemo} from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {createShimmerPlaceholder} from 'react-native-shimmer-placeholder';
 import LinearGradient from 'react-native-linear-gradient';
 import {width} from '../../helpers/device';
 import {Card, Title} from 'react-native-paper';
-import {Item} from '../../types/courses';
+import {CourseListProps} from '../../types/courses';
+import {getUserAvatar, getUserName} from '../../helpers/user-info';
 
 const ShimmerPlaceholder = createShimmerPlaceholder(LinearGradient);
 
 interface Props {
   isVisible: boolean;
   onPressItem: () => void;
-  item: Item;
+  item: CourseListProps;
 }
+
+type Combined = string | undefined;
 
 const CourseCard: FC<Props> = ({
   isVisible,
   onPressItem,
   item,
 }): ReactElement => {
-  const avatar: string | undefined =
-    item.courseTrainerList && item.courseTrainerList[0].trainerAvatar;
-  const name: string | undefined =
-    item.courseTrainerList &&
-    `${item.courseTrainerList[0].trainerFirstName} ${item.courseTrainerList[0].trainerLastName}`;
+  const avatar: Combined = getUserAvatar(item);
+  const name: Combined = getUserName(item);
+  console.log('name', name);
 
   return (
     <ShimmerPlaceholder
@@ -49,14 +50,14 @@ const styles = StyleSheet.create({
   card: {
     marginHorizontal: 5,
     borderRadius: 10,
-    marginBottom: 15,
+    marginBottom: 10,
   },
   shimmerCard: {
     height: 200,
-    width: width * 0.95,
-    marginHorizontal: 5,
+    width: '95%',
+    marginHorizontal: 10,
     borderRadius: 10,
-    marginBottom: 15,
+    marginBottom: 10,
   },
   imageContainer: {
     flexDirection: 'row',
